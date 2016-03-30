@@ -19,3 +19,13 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+#RVM
+.ruby-version
+.ruby-gemset
+
+#IDE
+.idea
+
+#KDE
+.directory
