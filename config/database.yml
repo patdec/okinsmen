@@ -12,8 +12,8 @@ default: &default
 development:
   <<: *default
   database: okinsmen_development
-  username: patrice
-  password: patrice
+  username: pandre
+  password: pandre
   host: localhost
   encoding: unicode
 
