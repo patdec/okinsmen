@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'okm_core' , path:  '../okm_core'
+# gem 'okm_core' , path:  '../okm_core'
 
 # Declare your gem's dependencies in okm_frontend.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
