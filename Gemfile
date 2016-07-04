@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.beta3', '< 5.1'
+gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.5.0'
+  gem 'capybara', '~> 2.7.1'
+  gem 'factory_girl_rails', '~> 4.7.0'
 end
 
 group :development do
@@ -47,3 +50,4 @@ end
 
 gem 'okm_core', path: 'components/okm_core'
 gem 'okm_frontend', path: 'components/okm_frontend'
+gem 'okm_backend', path: 'components/okm_backend'

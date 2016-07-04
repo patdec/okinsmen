@@ -7,16 +7,20 @@ require "okm_backend/version"
 Gem::Specification.new do |s|
   s.name        = "okm_backend"
   s.version     = OkmBackend::VERSION
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of OkmBackend."
-  s.description = "TODO: Description of OkmBackend."
+  s.authors     = ["Patrice André"]
+  s.email       = ["mail@patriceandre.com"]
+  s.homepage    = "http://patdec.github.io"
+  s.summary     = "Summary of OkmBackend."
+  s.description = "Description of OkmBackend."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  # s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", ">= 5.0.0.beta3", "< 5.1"
+  s.add_dependency "okm_core"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "pg", "~> 0.18.4"
+  s.add_development_dependency "rspec-rails", "~> 3.5.0"
+  s.add_development_dependency "capybara", "~> 2.7.1"
+  s.add_development_dependency "factory_girl_rails", "~> 4.7.0"
 end

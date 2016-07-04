@@ -1,0 +1,40 @@
+  [1m[35m (268.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (744.6ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (220.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (644.6ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (230.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (723.2ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (229.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (844.7ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (232.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (655.6ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (230.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (1477.9ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (229.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (752.5ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (223.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (633.2ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (225.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (833.6ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (227.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "okinsmen_test"[0m
+  [1m[35m (789.0ms)[0m  [1m[35mCREATE DATABASE "okinsmen_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m

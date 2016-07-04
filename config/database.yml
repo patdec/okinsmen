@@ -23,8 +23,8 @@ development:
 test:
   <<: *default
   database: okinsmen_test
-  username: patrice
-  password: patrice
+  username: pandre
+  password: pandre
   host: localhost
   encoding: unicode
 
