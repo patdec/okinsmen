@@ -16,7 +16,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.0.0"
+  s.add_dependency 'rails', '~> 5.0.0'
+  s.add_dependency 'pg', '~> 0.18.4'
 
   s.add_dependency 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,10 +36,8 @@ Gem::Specification.new do |s|
 
 
 
-  s.add_dependency "slim-rails" , "~> 3.1.0"
+  s.add_dependency 'slim-rails' , '~> 3.1.0'
 
-  s.add_development_dependency  'rspec-rails', '~> 3.5.0'
-  s.add_development_dependency  'capybara', '~> 2.7.1'
-  s.add_development_dependency  'factory_girl_rails', '~> 4.7.0'
-  s.add_development_dependency 'pg', '~> 0.18.4'
+
+
 end

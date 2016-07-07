@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
-  mount OkmFrontend::Engine => '/'
-  mount OkmBackend::Engine => '/admin'
+  constraints subdomain: 'www' do
+    mount OkmFrontend::Engine => '/'
+  end
+
+  constraints subdomain: 'admin' do
+    mount OkmBackend::Engine => '/'
+  end
 end
