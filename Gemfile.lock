@@ -8,8 +8,18 @@ PATH
   remote: components/okm_core
   specs:
     okm_core (0.1.0)
+      capybara (~> 2.7.1)
+      coffee-rails (~> 4.1.0)
+      factory_girl_rails (~> 4.7.0)
+      jbuilder (~> 2.0)
+      jquery-rails
+      pg (~> 0.18.4)
       rails (~> 5.0.0)
+      rspec-rails (~> 3.5.0)
+      sass-rails (~> 5.0)
       slim-rails (~> 3.1.0)
+      turbolinks (~> 5.x)
+      uglifier (>= 1.3.0)
 
 PATH
   remote: components/okm_frontend
@@ -215,24 +225,13 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capybara (~> 2.7.1)
-  coffee-rails (~> 4.1.0)
-  factory_girl_rails (~> 4.7.0)
-  jbuilder (~> 2.0)
-  jquery-rails
   listen (~> 3.0.5)
   okm_backend!
   okm_core!
   okm_frontend!
-  pg (~> 0.18.4)
   puma
-  rails (~> 5.0.0)
-  rspec-rails (~> 3.5.0)
-  sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
-  turbolinks (~> 5.x)
-  uglifier (>= 1.3.0)
   web-console (~> 3.0)
 
 RUBY VERSION
