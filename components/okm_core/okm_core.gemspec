@@ -34,10 +34,10 @@ Gem::Specification.new do |s|
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
   s.add_dependency 'jbuilder', '~> 2.0'
 
-
-
   s.add_dependency 'slim-rails' , '~> 3.1.0'
 
-
+  s.add_development_dependency  'rspec-rails', '~> 3.5.0'
+  s.add_development_dependency  'capybara', '~> 2.7.1'
+  s.add_development_dependency  'factory_girl_rails', '~> 4.7.0'
 
 end
