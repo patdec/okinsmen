@@ -39,5 +39,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency  'rspec-rails', '~> 3.5.0'
   s.add_development_dependency  'capybara', '~> 2.7.1'
   s.add_development_dependency  'factory_girl_rails', '~> 4.7.0'
+  s.add_development_dependency  'shoulda-matchers', '~> 3.1'
 
 end

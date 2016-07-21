@@ -1,5 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
+ENGINE_ROOT = File.join(File.dirname(__FILE__), '../')
 require File.expand_path('../dummy/config/environment', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
@@ -21,11 +22,11 @@ require 'rspec/rails'
 # require only the support files necessary.
 #
 # Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
-# ENGINE_ROOT=File.join(File.dirname(__FILE__),'../')
-# Dir[File.join(ENGINE_ROOT,"spec/support/**/*.rb")].each { |f| require f}
 
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
+ActiveRecord::Migrator.migrations_paths = File.join(ENGINE_ROOT, 'spec/dummy/db/migrate')
+
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
