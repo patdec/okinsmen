@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160721225347) do
+ActiveRecord::Schema.define(version: 20160722204105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,12 +25,8 @@ ActiveRecord::Schema.define(version: 20160721225347) do
     t.index ["human_id"], name: "index_okm_core_addresses_on_human_id", using: :btree
   end
 
-  create_table "okm_core_humen", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "okm_core_humen" because of following StandardError
+#   Unknown type 'gender' for column 'gender'
 
   add_foreign_key "okm_core_addresses", "okm_core_humen", column: "human_id"
 end

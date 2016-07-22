@@ -9,6 +9,8 @@ class CreateOkmCoreHumen < ActiveRecord::Migration[5.0]
     execute <<-SQL
       CREATE TYPE gender as ENUM('male','female');
     SQL
+
+    add_column :okm_core_humen, :gender, :gender
   end
 
   def down
