@@ -11,9 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['OKM_DB_NAME'] %>_development
-  username: <%= ENV['OKM_DB_USER'] %>
-  password: <%= ENV['OKM_DB_PASSWORD'] %>
+  database: <%= ENV['PATH_OKM_DB_NAME'] %>_development
+  username: <%= ENV['PATH_OKM_DB_USER'] %>
+  password: <%= ENV['PATH_OKM_DB_PASSWORD'] %>
   host: localhost
   encoding: unicode
 
@@ -22,9 +22,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV['OKM_DB_NAME'] %>_test
-  username: <%= ENV['OKM_DB_USER'] %>
-  password: <%= ENV['OKM_DB_PASSWORD'] %>
+  database: <%= ENV['PATH_OKM_DB_NAME'] %>_test
+  username: <%= ENV['PATH_OKM_DB_USER'] %>
+  password: <%= ENV['PATH_OKM_DB_PASSWORD'] %>
   host: localhost
   encoding: unicode
 

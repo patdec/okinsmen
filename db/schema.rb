@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160721185350) do
+ActiveRecord::Schema.define(version: 20160721185351) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "okm_core_addresses", force: :cascade do |t|
+    t.integer  "human_id"
+    t.string   "street"
+    t.string   "zip"
+    t.string   "city"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["human_id"], name: "index_okm_core_addresses_on_human_id", using: :btree
+  end
 
   create_table "okm_core_humen", force: :cascade do |t|
     t.string   "first_name"
@@ -22,4 +32,5 @@ ActiveRecord::Schema.define(version: 20160721185350) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "okm_core_addresses", "okm_core_humen", column: "human_id"
 end
