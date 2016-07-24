@@ -60,7 +60,7 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.include OkmBackend::Engine.routes.url_helpers
-
+  config.include SubdomainHelpers, type: :feature
 end
 
 Shoulda::Matchers.configure do |config|

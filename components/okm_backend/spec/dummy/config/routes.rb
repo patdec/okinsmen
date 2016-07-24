@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount OkmBackend::Engine => "/okm_backend"
+  mount OkmBackend::Engine => "/"
 end
