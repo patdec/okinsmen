@@ -1,1 +1,15 @@
 h2 Create new human
+
+=form_for @human,action: :create do |f|
+  /=f.label :male, 'Male'
+  /=f.radio_button [:male, :female] , :male
+  /=f.label :female, 'Female'
+  /=f.radio_button :female, 'female'
+  -OkmCore::Human.genders.keys.each do |gender|
+    = f.radio_button :genders, gender
+    = f.label gender.to_sym
+
+  =f.label :first_name
+  =f.text_field :first_name
+  =f.label :last_name
+  =f.text_field :last_name

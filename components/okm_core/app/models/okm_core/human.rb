@@ -1,9 +1,6 @@
 module OkmCore
   class Human < ApplicationRecord
-    enum gender: {
-        male: 'male',
-        female: 'female'
-    }
+    enum gender: %i[male female]
     has_many :addresses, class_name: 'OkmCore::Address'
     validates :gender, presence: true
     validates :first_name, presence: true
