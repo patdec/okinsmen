@@ -7,6 +7,10 @@ module OkmBackend
     end
 
     def new
+      @human = OkmCore::Human.new
+    end
+
+    def create
 
     end
   end
