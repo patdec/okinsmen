@@ -1,3 +1,7 @@
 h2 Humen list
 
 =link_to 'New human',new_human_path
+
+ul
+-@humen.each do |human|
+  li =human.complete_name
