@@ -13,5 +13,7 @@ module Okinsmen
     # -- all .rb files in that directory are automatically loaded.
 
     config.active_record.schema_format = :sql
+
+    config.react.addons = true
   end
 end

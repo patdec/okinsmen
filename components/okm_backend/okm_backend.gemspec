@@ -18,7 +18,9 @@ Gem::Specification.new do |s|
   # s.test_files = Dir["spec/**/*"]
   s.required_ruby_version = '2.3.1'
 
-  s.add_dependency "okm_core"
+  s.add_dependency 'okm_core'
+
+  s.add_dependency 'react-rails'
 
   s.add_development_dependency  'rspec-rails', '~> 3.5.0'
   s.add_development_dependency  'capybara', '~> 2.7.1'
