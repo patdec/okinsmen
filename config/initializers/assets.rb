@@ -9,3 +9,7 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Dir[File.join(Rails.root,"components/okm_backend/app/assets/javascripts/okm_backend/*.coffee")].map{|f| f.split("/").last.split(".").first}.each do |f|
+  Rails.application.config.assets.precompile += ["okm_backend/#{f}.js"]
+end
+# Rails.application.config.assets.precompile += %w( okm_backend/humen.js )

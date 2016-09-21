@@ -2,12 +2,16 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.5.4
+-- Dumped by pg_dump version 9.5.4
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
+SET row_security = off;
 
 --
 -- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: -
@@ -40,7 +44,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE ar_internal_metadata (
@@ -52,7 +56,7 @@ CREATE TABLE ar_internal_metadata (
 
 
 --
--- Name: okm_core_addresses; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: okm_core_addresses; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE okm_core_addresses (
@@ -86,7 +90,7 @@ ALTER SEQUENCE okm_core_addresses_id_seq OWNED BY okm_core_addresses.id;
 
 
 --
--- Name: okm_core_humen; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: okm_core_humen; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE okm_core_humen (
@@ -119,7 +123,7 @@ ALTER SEQUENCE okm_core_humen_id_seq OWNED BY okm_core_humen.id;
 
 
 --
--- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE schema_migrations (
@@ -142,7 +146,7 @@ ALTER TABLE ONLY okm_core_humen ALTER COLUMN id SET DEFAULT nextval('okm_core_hu
 
 
 --
--- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY ar_internal_metadata
@@ -150,7 +154,7 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
--- Name: okm_core_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: okm_core_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY okm_core_addresses
@@ -158,7 +162,7 @@ ALTER TABLE ONLY okm_core_addresses
 
 
 --
--- Name: okm_core_humen_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: okm_core_humen_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY okm_core_humen
@@ -166,7 +170,7 @@ ALTER TABLE ONLY okm_core_humen
 
 
 --
--- Name: schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY schema_migrations
@@ -174,7 +178,7 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
--- Name: index_okm_core_addresses_on_human_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+-- Name: index_okm_core_addresses_on_human_id; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX index_okm_core_addresses_on_human_id ON okm_core_addresses USING btree (human_id);
@@ -192,7 +196,7 @@ ALTER TABLE ONLY okm_core_addresses
 -- PostgreSQL database dump complete
 --
 
-SET search_path TO "$user",public;
+SET search_path TO "$user", public;
 
 INSERT INTO schema_migrations (version) VALUES ('20160721180809'), ('20160721181212');
 

@@ -4,7 +4,7 @@ html
     title
       | Okm backend
     = stylesheet_link_tag    "okm_backend/application", media: "all"
-    = javascript_include_tag "okm_backend/application"
+    = javascript_include_tag "okm_backend/application",params[:controller]
     = csrf_meta_tags
   body
     = yield
