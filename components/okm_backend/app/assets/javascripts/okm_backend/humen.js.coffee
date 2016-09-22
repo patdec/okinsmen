@@ -1,6 +1,31 @@
 DOM = React.DOM
 
+FormInputWithLabel=React.createClass
+  displayName: "FormInputWithLabel"
+  getDefaultProps: {
+    elemenType: 'input',
+    inputType: 'text'
+  }
+  render: ->
+    DOM.div null,
+      DOM.label
+        htmlFor: @props.id
+      DOM[@props.elemenType]
+        placeholder: @props.placeholder
+        id: @props.id
+        type: @tagType()
+        value: @props.value
+        onChange: @props.onchange
+  tagType: ->
+    {
+      "input": @props.inputType,
+      "textarea": null
+    }[@props.elemenType]
+
+formInputWithLabel=React.createFactory(FormInputWithLabel)
+
 window.CreateNewHumanForm = React.createClass
+  displayName: "CreateNewHumanForm"
   getInitialState: ->
     {
       human: {
@@ -23,24 +48,16 @@ window.CreateNewHumanForm = React.createClass
       DOM.fieldset null,
         DOM.legend null, "New human"
 
-        DOM.div null,
-          DOM.label
-            htmlFor: "firstName"
-          DOM.input
-            placeholder: "First name"
-            id: "firstName"
-            type: "text"
-            value: @state.human.firstName
-            onChange: @firstNameChanged
+        formInputWithLabel
+          id: "firstName"
+          type: "text"
+          value: @state.human.firstName
+          onchange: @firstNameChanged
 
-        DOM.div null,
-          DOM.label
-            htmlFor: "lastName"
-          DOM.input
-            placeholder: "Last name"
-            id: "lastName"
-            type: "text"
-            value: @state.human.lastName
-            onChange: @lastNameChanged
+        formInputWithLabel
+          id: "lastName"
+          type: "text"
+          value: @state.human.lastName
+          onchange: @lastNameChanged
 
 createNewHumanForm = React.createFactory(CreateNewHumanForm)
