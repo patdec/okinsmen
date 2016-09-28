@@ -13,14 +13,20 @@ module OkmBackend
     def create
       @human=OkmCore::Human.new(human_params)
       if @human.save!
-        redirect_to humen_path
+        respond_to do |format|
+          format.html { redirect_to humen_path, notice: "Human successfully created" }
+          format.json { render json status: :ok }
+        end
       else
-        flash :error, 'Wrong parameters'
+        respond_to do |format|
+          format.html { flash :error, 'Wrong parameters' }
+          format.json { render json: @human.errors, status: :unprocessable_entity  }
+        end
       end
     end
 
     def human_params
-      params.require(:human).permit(:gender,:first_name, :last_name)
+      params.require(:human).permit(:gender, :first_name, :last_name)
     end
   end
 end
